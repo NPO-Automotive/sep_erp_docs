@@ -3,6 +3,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 
 import styles from './index.module.css';
 
@@ -15,7 +16,32 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        
+        <div style={{ marginTop: '150px', display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <div style={{ flex: '1 1 45%', minWidth: '300px', textAlign: 'center' }}>
+            <Link className="button button--secondary button--lg" to="/docs/category/requirements">
+              Requirements
+            </Link>
+            <p>Документация по требованиям проекта</p>
+          </div>
+          <div style={{ flex: '1 1 45%', minWidth: '300px', textAlign: 'center' }}>
+            <Link className="button button--secondary button--lg" to="/docs/category/testcases">
+              TestCases
+            </Link>
+            <p>Шаблоны и примеры тест-кейсов</p>
+          </div>
+          <div style={{ flex: '1 1 45%', minWidth: '300px', textAlign: 'center' }}>
+            <Link className="button button--secondary button--lg" to="/docs/category/описание-багов">
+              Описание багов
+            </Link>
+            <p>Соглашение описания багов в проекте</p>
+          </div>
+          <div style={{ flex: '1 1 45%', minWidth: '300px', textAlign: 'center' }}>
+            <Link className="button button--secondary button--lg" to="/docs/category/tutorial---basics">
+              Tutorial - Basics
+            </Link>
+            <p>Основы работы с Docusaurus</p>
+          </div>
+        </div>
       </div>
     </header>
   );
