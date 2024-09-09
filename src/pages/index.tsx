@@ -18,14 +18,14 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div style={{ marginTop: '150px', display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>
           <div style={{ flex: '1 1 45%', minWidth: '300px', textAlign: 'center' }}>
-            <Link className="button button--secondary button--lg" to="/docs/category/requirements">
-              Requirements
+            <Link className="button button--secondary button--lg" to="/docs/category/требования">
+              Требования
             </Link>
             <p>Документация по требованиям проекта</p>
           </div>
           <div style={{ flex: '1 1 45%', minWidth: '300px', textAlign: 'center' }}>
-            <Link className="button button--secondary button--lg" to="/docs/category/testcases">
-              TestCases
+            <Link className="button button--secondary button--lg" to="/docs/category/тест-кейсы">
+              Тест Кейсы
             </Link>
             <p>Шаблоны и примеры тест-кейсов</p>
           </div>
